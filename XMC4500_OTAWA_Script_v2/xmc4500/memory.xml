@@ -20,53 +20,63 @@ edit -->
 	</configuration>
 	<banks>
 		<bank>
-			<name>FLASH_1_cached</name>   <!--Program FLASH1 cachable-->
-			<address><offset>0x08000000</offset></address>
+			<name>FLASH_1_cached</name>			<!--Program FLASH1 cached-->
+			<address>
+				<offset>0x08000000</offset>
+			</address>
 			<size>0x00100000</size>
 			<type>ROM</type>
 			<latency>1</latency>
 			<writable>false</writable>
-			<cachable>true</cachable>
+			<cached>true</cached>
 		</bank>
 		<bank>
-			<name>FLASH_1_uncached</name>   <!--Program FLASH1 uncachable-->
-			<address><offset>0x0C000000</offset></address>
+			<name>FLASH_1_uncached</name>			<!--Program FLASH1 uncached-->
+			<address>
+				<offset>0x0C000000</offset>
+			</address>
 			<size>0x00100000</size>
 			<type>ROM</type>
-			<latency>3</latency> <!--WSPFLASH-->
-			<write_latency>3</write_latency>  <!--WSPFLASH-->
+			<latency>3</latency>			<!--WSPFLASH-->
+			<write_latency>3</write_latency>			<!--WSPFLASH-->
 			<writable>true</writable>
-			<cachable>false</cachable>
+			<cached>false</cached>
 		</bank>
 		<bank>
-			<name>PSRAM_1</name>   <!--Program SRAM-->
-			<address><offset>0x10000000</offset></address>
+			<name>PSRAM_1</name>			<!--Program SRAM-->
+			<address>
+				<offset>0x10000000</offset>
+			</address>
 			<size>0x00010000</size>
 			<type>SPM</type>
 			<latency>1</latency>
 			<write_latency>1</write_latency>
 			<writable>true</writable>
-			<cachable>false</cachable>
+			<cached>false</cached>
 		</bank>
 		<bank>
-			<name>DSRAM_1_system</name>   <!--System Data SRAM-->
-			<address><offset>0x20000000</offset></address>
+			<name>DSRAM_1_system</name>			<!--System Data SRAM-->
+			<address>
+				<offset>0x20000000</offset>
+			</address>
 			<size>0x00010000</size>
 			<type>SPM</type>
 			<latency>1</latency>
 			<write_latency>1</write_latency>
 			<writable>true</writable>
-			<cachable>false</cachable>
+			<cached>false</cached>
 		</bank>
 		<bank>
-			<name>DSRAM_2_comm</name>   <!--Communication Data SRAM-->
-			<address><offset>0x30000000</offset></address>
+			<name>DSRAM_2_comm</name>			<!--Communication Data SRAM-->
+			<address>
+				<offset>0x30000000</offset>
+			</address>
 			<size>0x00008000</size>
 			<type>SPM</type>
 			<latency>1</latency>
 			<write_latency>1</write_latency>
 			<writable>true</writable>
-			<cachable>false</cachable>
+			<cached>false</cached>
 		</bank>
 	</banks>
 </memory>
