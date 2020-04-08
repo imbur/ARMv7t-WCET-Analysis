@@ -46,7 +46,7 @@ all: $(OBJS) $(TARGET).elf $(TARGET)
 
 $(TARGET).elf: $(OBJS)
 	mkdir -p bin/
-	$(CC) -T $(LINKER_FILE) $(LFLAGS) $(CFLAGS) $(ASFLAGS) -o bin/$(TARGET).elf $(OBJS) $(LIBS)
+	$(CC) -T$(LINKER_FILE) $(LFLAGS) $(CFLAGS) $(ASFLAGS) -o bin/$(TARGET).elf $(OBJS) $(LIBS)
 
 $(TARGET): $(TARGET).elf
 	$(CP) $(CPFLAGS) bin/$(TARGET).elf bin/$(TARGET).bin
