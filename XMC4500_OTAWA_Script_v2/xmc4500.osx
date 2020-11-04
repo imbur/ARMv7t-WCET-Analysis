@@ -52,7 +52,7 @@
 	
 	<step processor="otawa::BasicGraphBBTime"/>
 
-	<step processor="otawa::CAT2ConstraintBuilder"/>  <!--instruction cache using cache.xml-->
+	<!--	<step processor="otawa::CAT2ConstraintBuilder"/> -->  <!--instruction cache using cache.xml-->
 
 	<!-- WCET analysis using BasicGraphBBTime and pipeline.xml-->
 	<step require="otawa::ipet::WCET_FEATURE"/>
